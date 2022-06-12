@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" client="site" method="upgrade">
+	<name>mod_bibliant</name>
+	<author>Ribamar FS</author>
+	<creationDate>Junho 2022</creationDate>
+	<copyright>(C) 2022</copyright>
+	<license>GPL2</license>
+	<authorEmail>ribafs@gmail.com</authorEmail>
+	<authorUrl>ribamar.net.br</authorUrl>
+	<version>2.0</version>
+	<description>Um módulo para exibir um versículo aleatório do novo testamento para cada visualização do site.</description>
+	<files>
+		<filename module="mod_bibliant">mod_bibliant.php</filename>
+	</files>
+</extension>

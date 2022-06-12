@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="component" version="2.5" method="upgrade">
+	<name>com_bibliant</name>
+	<author>Ribamar FS</author>
+	<creationDate>Junho 2022</creationDate>
+	<copyright>(C) 2022</copyright>
+	<license>GPL2</license>
+	<authorEmail>ribafs@gmail.com</authorEmail>
+	<authorUrl>ribamar.net.br</authorUrl>
+	<version>2.0</version>
+	<description>Um componente de suporte ao módulo para exibir um versículo aleatório do novo testamento para cada visualização do site.</description>
+
+	<installfile>install.bibliant.php</installfile>
+	<uninstallfile>uninstall.bibliant.php</uninstallfile>
+	
+	<install>
+		<sql>
+			<file driver="pgsql" charset="utf8">install.pgsql.sql</file>
+		</sql>
+	</install>
+	
+	<uninstall>
+		<sql>
+			<file driver="pgsql" charset="utf8">uninstall.pgsql.sql</file>
+		</sql>
+	</uninstall>
+
+	<administration>
+		<files folder="admin">
+			<filename>install.pgsql.sql</filename>
+			<filename>uninstall.pgsql.sql</filename>
+		</files>
+	</administration>
+</extension>
